@@ -91,7 +91,7 @@ class Request {
 
 		$className = '\\Alexa\\Request\\' . $requestType;
 
-		$request = new $className($this->rawData);
+		$request = new $className($this->rawData, $this->applicationId);
 		return $request;
 	}
 
